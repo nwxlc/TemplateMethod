@@ -10,14 +10,11 @@ public class Tea : Drink
     }
     protected override void AddСomponents()
     {
-        if (IsAddish())
-        {
-            Console.WriteLine("Добавляем лимон");
-        }
+        Console.WriteLine("Добавляем лимон");
     }
 
     protected override bool IsAddish()
     {
-        return _isAddish;
+        return true;
     }
 }

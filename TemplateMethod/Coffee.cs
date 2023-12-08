@@ -15,15 +15,7 @@ public class Coffee : Drink
     }
     protected override void AddСomponents()
     {
-        if (IsAddish())
-        {
-            Console.WriteLine("Добавляем молоко");
-            
-        }
-        else
-        {
-            Console.WriteLine("Без добавок");
-        }
+        Console.WriteLine("Добавляем молоко");
     }
 
     protected override bool IsAddish()

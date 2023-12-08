@@ -7,7 +7,10 @@ public abstract class Drink
         BoilerWater();
         Brew();
         PourIntoMug();
-        AddСomponents();
+        if (IsAddish())
+        {
+            AddСomponents();
+        }
     }
     public void BoilerWater()
     {
@@ -22,5 +25,8 @@ public abstract class Drink
     }
 
     protected abstract void AddСomponents();
-    protected abstract bool IsAddish();
+    protected virtual bool IsAddish()
+    {
+        return true;
+    }
 }
